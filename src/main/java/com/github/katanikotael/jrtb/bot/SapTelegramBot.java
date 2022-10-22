@@ -1,6 +1,8 @@
 package com.github.katanikotael.jrtb.bot;
 
+import com.github.katanikotael.jrtb.services.SendBotMessageServiceImpl;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
@@ -38,20 +40,9 @@ public class SapTelegramBot extends TelegramLongPollingBot {
 
             System.out.println(update.getMessage().getFrom().getUserName() + ": " + message);
 
-            SendMessage sm = new SendMessage();
-            sm.setChatId(chatId);
-            if (message.toLowerCase().contains("привет")) {
-                sm.setText("И тебе привет!");
-            } else {
-                sm.setText(message);
-            }
+            SendBotMessageServiceImpl send = new SendBotMessageServiceImpl(this);
+            send.sendMessage(chatId, message);
 
-            try {
-                execute(sm);
-                System.out.println("bot: " + sm.getText());
-            } catch (TelegramApiException e) {
-                e.printStackTrace();
-            }
         }
 
     }
