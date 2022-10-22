@@ -7,7 +7,9 @@ package com.github.katanikotael.jrtb.command;
 public enum CommandName {
 
     START("/start"),
-    STOP("/stop");
+    HELP("/help"),
+    STOP("/stop"),
+    NO("");
 
     private final String commandName;
 
