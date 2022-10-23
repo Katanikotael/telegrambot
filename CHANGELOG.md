@@ -1,5 +1,14 @@
 # Changelog
 ___
+## V 0.2.1
+### New enhancement:
+* JUnit tests for testing sendMessageService and commands added.
+___
+## V 0.2.0
+### New features:
+* Command interface, sendMessage interface added.
+* Command pattern structure and stub commands added
+___
 ## V 0.1.1
 ### Bug Fixes:
 * Enable skip test on SureFire plugin.
