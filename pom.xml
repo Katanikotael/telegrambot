@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.github.katanikotael</groupId>
 	<artifactId>katanikotael-telegrambot</artifactId>
-	<version>0.1.1-SNAPSHOT</version>
+	<version>0.2.1-SNAPSHOT</version>
 	<name>TelegramBot</name>
 	<description>Desription for TelegramBot</description>
 	<properties>
