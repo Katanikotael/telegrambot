@@ -4,7 +4,6 @@ ___
 ### New features:
 * Added deployment process to the project.
 * Added Readme
-
 ___
 ## V 0.2.1
 ### New enhancement:
@@ -26,5 +25,3 @@ ___
 ## V 0.0.1 Initial
 ### New features:
 * Added SpringBoot skeleton.
-
-
