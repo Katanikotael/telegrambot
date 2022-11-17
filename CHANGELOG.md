@@ -1,5 +1,11 @@
 # Changelog
 ___
+## V 0.3.0
+### New features:
+* Added deployment process to the project.
+* Added Readme
+
+___
 ## V 0.2.1
 ### New enhancement:
 * JUnit tests for testing sendMessageService and commands added.

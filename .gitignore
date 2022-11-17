@@ -34,3 +34,7 @@ build/
 
 ### Credentials ###
 src/main/resources/application.properties
+/.env/
+
+## Start script with credentials ###
+startMyBot.sh
